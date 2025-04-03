@@ -67,7 +67,7 @@ nav ul li a.active {
 /* Hero Rota Section */
 .hero-rota {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("img/rotas-bg.jpg") center/cover no-repeat;
+    url("img/rotas.png") center/cover no-repeat;
   height: 100vh;
   min-height: 600px;
   display: flex;
@@ -189,13 +189,22 @@ footer {
   padding-top: 20px;
   border-top: 1px solid #444;
 }
+header.scrolled {
+  padding: 5px 0; /* Reduz altura */
+  background: rgba(0, 0, 0, 0.95); /* Fundo mais sólido */
+}
 
 @media (max-width: 768px) {
   .header-content {
     flex-direction: column;
     text-align: center;
   }
-
+  header {
+    padding: 10px 0; /* Reduz padding */
+  }
+  .logo {
+    font-size: 20px; /* Reduz tamanho do logo */
+  }
   .logo {
     margin-bottom: 15px;
   }

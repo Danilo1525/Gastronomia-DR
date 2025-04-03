@@ -303,19 +303,9 @@ footer {
   color: #aaa;
 }
 
-/* Media Queries */
-@media (max-width: 992px) {
-  .hero-internal h1 {
-    font-size: 36px;
-  }
-
-  .hero-internal p {
-    font-size: 16px;
-  }
-
-  .restaurant-grid {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  }
+header.scrolled {
+  padding: 5px 0; /* Reduz altura */
+  background: rgba(0, 0, 0, 0.95); /* Fundo mais sólido */
 }
 
 @media (max-width: 768px) {
@@ -323,7 +313,12 @@ footer {
     flex-direction: column;
     text-align: center;
   }
-
+  header {
+    padding: 10px 0; /* Reduz padding */
+  }
+  .logo {
+    font-size: 20px; /* Reduz tamanho do logo */
+  }
   nav ul {
     margin-top: 15px;
     flex-wrap: wrap;
