@@ -342,6 +342,16 @@
                 <i class="fas fa-utensils"></i> Culinária: Cafés especiais e
                 lanches
               </p>
+              <p class="description">
+                O Seu Café é um local acolhedor e é um ótimo para começar o dia
+                ou relaxar à tarde. Se você está procurando por um café
+                confiável e aconchegante, o Seu Café é uma excelente opção.
+              </p>
+              <p><i class="fas fa-clock"></i> Horário: Seg-Sáb: 6h-20:30h</p>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> Localização: Rua Amael
+                Pompeu Filho, n 455 - Parque Alvorada 
+              </p>
               <a
                 href="https://maps.app.goo.gl/bkZ68Fx8hxrrhdNy5"
                 class="btn"
@@ -372,6 +382,7 @@
                 <i class="fas fa-utensils"></i> Culinária: Churrasco gaúcho e
                 buffet
               </p>
+
               <a
                 href="https://maps.app.goo.gl/bkZ68Fx8hxrrhdNy5"
                 class="btn"
@@ -490,6 +501,21 @@
               <p>
                 <i class="fas fa-utensils"></i> Culinária: Sushi (rodízio, à la
                 carte, omakase)
+              </p>
+              <p class="description">
+                O Utida é um renomado restaurante Japonês, famoso por seu sushi
+                fresco e saboroso, com opções que vão desde o tradicional
+                sashimi até o inovador omakase. Seus clientes podem escolher
+                entre o rodízio de sushi, que oferece uma variedade de pratos,
+                ou o menu à la carte, ideal para quem deseja personalizar sua
+                refeição. O restaurante proporciona um espaço acolhedor e
+                elegante, perfeito para jantares românticos ou encontros com
+                amigos e família.
+              </p>
+              <p><i class="fas fa-clock"></i> Horário: Ter-Dom: 18h-22h</p>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> Localização: R. Maj.
+                Capilé, 2598 - Centro, Dourados - MS, 79805-011
               </p>
               <a
                 href="https://maps.app.goo.gl/bkZ68Fx8hxrrhdNy5"
@@ -631,6 +657,33 @@
                 <span>4.8</span>
               </div>
               <p><i class="fas fa-utensils"></i> Culinária: Comida mexicana</p>
+              <div class="description-container">
+                <p class="description">
+                  Se você está em busca de uma experiência gastronômica vibrante
+                  e cheia de sabor, o Nacho Man Dourados é uma excelente
+                  escolha! O restaurante oferece uma variedade de pratos típicos
+                  da culinária mexicana como, burritos, tacos, quesadillas e
+                  nachos de diferentes versões e gostos.Também são oferecidos
+                  pratos vegetarianos, sem lactose e sem glúten. O Nacho Man
+                  também tem um cardápio de drinks maravilhosos, com e sem
+                  álcool. O espaço é decorado com referências à cultura
+                  mexicana, criando uma atmosfera divertida e acolhedora para os
+                  clientes. Venha para o Nacho Man Dourados, e mergulhe no sabor
+                  autêntico do México!
+                </p>
+                <a class="read-more">Leia mais</a>
+              </div>
+              <div class="details hidden">
+                <p>
+                  <i class="fas fa-clock"></i> Horário: Seg-Sáb: 10h-22h | Dom:
+                  11h-22h
+                </p>
+                <p>
+                  <i class="fas fa-map-marker-alt"></i> Localização: Av.
+                  Marcelino Pires, 3600 - Sala LE01 - Jardim Caramuru,
+                  Dourados - MS, 79830-903
+                </p>
+              </div>
               <a
                 href="https://maps.app.goo.gl/bkZ68Fx8hxrrhdNy5"
                 class="btn"
@@ -659,6 +712,20 @@
               </div>
               <p>
                 <i class="fas fa-utensils"></i> Culinária: Confeitaria artesanal
+              </p>
+              <p class="description">
+                Se você pensa em mergulhar na culinária Coreana, o Gatolo Bakery
+                é a escolha ideial. O restaurante oferece várias opções de
+                pratos típicos, assim como doces e bebidas da culinária
+                asiática. Seu ambiente é acolhedor, e o espaço conta com um
+                local para fotos e com jogos de tabuleiro para você curtir com
+                amigos e familiares, enquanto saboreiam a culinária autentica da
+                Coréia.
+              </p>
+              <p><i class="fas fa-clock"></i> Horário: Qua-Dom: 18h-22h</p>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> Localização: Rua Amael
+                Pompeu Filho, n 455 - Parque Alvorada 
               </p>
               <a
                 href="https://maps.app.goo.gl/bkZ68Fx8hxrrhdNy5"
@@ -716,6 +783,19 @@
                 <span>4.6</span>
               </div>
               <p><i class="fas fa-utensils"></i> Culinária: Cafés especiais</p>
+              <p class="description">
+                A Uelma Arantes é uma cafeteria que oferece uma experiência
+                única e acolhedora. Além disso, é um ótimo lugar para relaxar e
+                desfrutar de um bom café.
+              </p>
+              <p>
+                <i class="fas fa-clock"></i> Horário: Seg-Sex: 13:30h-18:30h |
+                Sáb: 12h-18h
+              </p>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> Localização: R. Afonso
+                Pena, 388 - Vila Aurora, Dourados 
+              </p>
               <a
                 href="https://maps.app.goo.gl/bkZ68Fx8hxrrhdNy5"
                 class="btn"
@@ -847,6 +927,25 @@
         sortSelect.addEventListener("change", filterAndSortRestaurants);
         cuisineSelect.addEventListener("change", filterAndSortRestaurants);
         filterAndSortRestaurants();
+      });
+      document.querySelectorAll(".read-more").forEach((button) => {
+        button.addEventListener("click", function () {
+          const card = this.closest(".restaurant-card");
+          const description = card.querySelector(".description");
+          const details = card.querySelector(".details");
+
+          if (details.classList.contains("hidden")) {
+            // Mostrar tudo
+            description.style.webkitLineClamp = "unset";
+            details.classList.remove("hidden");
+            this.textContent = "Mostrar menos";
+          } else {
+            // Recolher
+            description.style.webkitLineClamp = "3";
+            details.classList.add("hidden");
+            this.textContent = "Leia mais";
+          }
+        });
       });
     </script>
     <script src="scripts.js"></script>
